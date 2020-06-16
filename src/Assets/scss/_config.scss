@@ -1,0 +1,54 @@
+$black: #010000;
+$white: #fff;
+$lightGrey: #e6e6e6;
+$darkGrey: #333;
+$red: #ff1755;
+$mainOrange: #f19329;
+
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
+
+@mixin translateY($e) {
+  -webkit-transform: translateY($e);
+    -moz-transform: translateY($e);
+          transform: translateY($e);
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  transition: $args;
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: $black;
+  font-weight: 400;
+  font-style: normal;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  @include transition(.4s ease-in-out);
+  cursor: pointer;
+
+  &:hover {
+    color: $mainOrange;
+    @include transition(.4s ease-in-out);
+  }
+}
+
+.container-fluid {
+  //line-height: 24px;
+
+  p {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.5em;
+    line-height: normal;
+    color: #555;
+    //letter-spacing: 0.05em;
+    text-align: center;
+  }
+}
