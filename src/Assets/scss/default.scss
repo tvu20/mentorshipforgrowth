@@ -1,5 +1,9 @@
 @import "_config.scss";
 
+body {
+  font-family: 'Alegreya Sans';
+}
+
 // ******** HEADER **********
 // CONTAINS NAVIGATION LINKS
 // AT THE TOP OF EVERY PAGE
@@ -12,7 +16,6 @@ header {
   color: $black;
   height: 70px;
   background-color: transparent;
-  font-family: 'Alegreya Sans';
   -webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
   transition: background-color 1s;
 
@@ -72,7 +75,6 @@ header {
   margin: 0;
   padding: 5% 0;
   height: 550px;
-  font-family: 'Alegreya Sans';
   text-align: center;
 
 
@@ -91,7 +93,7 @@ header {
 
 .main {
   // background-image: linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(#9f6316, 1)), url(https://cdn.getyourguide.com/img/tour_img-1739965-148.jpg);
-  background-image: linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(#9f6316, 1)), url(https://arbordayblog.org/wp-content/uploads/2018/06/oak-tree-sunset-iStock-477164218-1080x608.jpg);
+  background-image: linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(#a6551a, 1)), url(https://arbordayblog.org/wp-content/uploads/2018/06/oak-tree-sunset-iStock-477164218-1080x608.jpg);
   background-position: center;
 }
 
@@ -104,7 +106,7 @@ header {
 }
 
 .program {
-  background-image: linear-gradient(to right, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url(https://www.singaporeartmuseum.sg/-/media/sam/images/yellow-ribbon-2016/yellow-ribbon-2016-hero-desktop.jpg?w=1920&hash=C45B8EFABB5187E610E487C792EB29B906D22369);
+  background-image: linear-gradient(to right, rgba(245, 246, 252, 0.52), rgba(117, 19, 63, 0.73)), url(https://www.singaporeartmuseum.sg/-/media/sam/images/yellow-ribbon-2016/yellow-ribbon-2016-hero-desktop.jpg?w=1920&hash=C45B8EFABB5187E610E487C792EB29B906D22369);
 
   h1 {
     padding-top: auto;
@@ -124,13 +126,16 @@ header {
   }
 }
 
-.intro {
+// ******** INTRO AND OFFER **********
+// TOP SECTIONS OF HOME AND PROGRAM PAGES
+// STYLED WITH SIMILAR CSS
+// INDIVIDUAL CHANGES BELOW
+.intro, .offer {
   padding: 7% 5%;
   margin: 0;
   text-align: left;
   background-color: $lightGrey;
   display: flex;
-  font-family: 'Alegreya Sans';
 
   .paragraph {
     width: 50%;
@@ -155,12 +160,19 @@ header {
   }
 
   img {
-    //float: right;
+    width: 50%;
     padding-left: 10%;
   }
 }
 
-.quote {
+.offer {
+  padding: 12% 5%;
+  background-color: $white;
+}
+
+// ******** QUOTE AND DESCRIPTION **********
+// FOUND ON MAIN AND PROGRAM PAGES RESPECTIVELY
+.quote, .description {
   background-image: url(https://cdn.archpaper.com/wp-content/uploads/2020/06/maarten-van-den-heuvel-gZXx8lKAb7Y-unsplash.jpg), linear-gradient(rgba(85, 85, 85, 0.5),rgba(85, 85, 85, 0.5));
   background-blend-mode: overlay;;
   background-repeat: no-repeat;
@@ -169,7 +181,6 @@ header {
   margin: 0;
   padding: 5% 0;
   height: 500px;
-  font-family: 'Alegreya Sans';
 
   h2 {
     color: $white;
@@ -188,16 +199,28 @@ header {
   }
 }
 
+.description {
+  height: auto;
+  padding: 12% 5%;
+  background-image: url(https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20190410173608/Mountains.jpg), linear-gradient(rgba(182, 87, 36, 0.5), rgba(42, 102, 199, 0.6));
+
+  p {
+    text-align: center;
+    color: $white;
+    font-size: 2em;
+  }
+}
+
 .pillars {
-  padding: 8% 5%;
+  padding: 9% 5%;
   background-color: $white;
   align-items: center;
-  text-align: center;
-  font-family: 'Alegreya Sans';
+  text-align: center;rgba(42, 102, 199, 0.53)
 
   h2 {
     padding-bottom: 3%;
     font-size: 2.5em;
+    font-weight: bold;
   }
 
   .rows {
@@ -237,11 +260,38 @@ header {
   }
 }
 
+// ******** MISSION **********
+// FOUND ON MAIN PAGE
+.mission {
+  padding: 10%;
+  background-color: $white;
+  text-align: center;
+
+  h3 {
+    color: $mainOrange;
+    font-size: 1.5em;
+  }
+
+  h2 {
+    color: $orangeRed;
+    font-weight: bold;
+    font-size: 3em;
+    padding-bottom: 2%;
+  }
+
+  p {
+    font-size: 1.25em;
+  }
+}
+
+// ******** JOIN **********
+// IDENTICAL SECTION
+// FOUND ON HOME AND ABOUT PAGES
 .join {
-  padding: 10% 5%;
+  padding: 12% 5%;
   margin: 0;
   text-align: left;
-  font-family: 'Alegreya Sans';
+  background-color: $white;
 
   .content {
     display: flex;
@@ -282,9 +332,54 @@ header {
     }
 
     img {
-      //float: right;
-      //padding-right: 10%;
       width: 50%;
+    }
+  }
+}
+
+
+// ******** AUDIENCE **********
+// FOUND ON PROGRAM PAGE
+.audience {
+  padding: 7% 5%;
+  margin: 0;
+  text-align: left;
+  display: flex;
+  padding: 12% 5%;
+
+  .paragraph {
+    width: 50%;
+
+    h2 {
+      text-align: left;
+      font-size: 2.5em;
+      //padding-top: 10%;
+      padding-top: 1%;
+      padding-bottom: 3%;
+      color: $black;
+      font-weight: bold;
+    }
+
+    p {
+      color: $darkGrey;
+      text-align: left;
+      font-size: 1em;
+      padding-bottom: 3%;
+      line-height: 1.5em;
+    }
+  }
+
+  .img-container {
+    width: 50%;
+    padding-right: 10%;
+    position: relative;
+
+    img {
+      max-width: 80%;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
     }
   }
 }
@@ -292,14 +387,14 @@ header {
 
 // ********* DONATION *********
 // LINKS TO PAYPAL
-// INCLUDED ON EVERY
+// SEPARATE COMPONENT
+// PRESENT ON EACH PAGE
 .donate {
   height: 600px;
   padding: 12% 0;
   display: inline-block;
   text-align: center;
   width: 100%;
-  font-family: 'Alegreya Sans';
 
 
   background-image: url(https://i.redd.it/yx2xr73lx7i21.jpg);
@@ -312,13 +407,13 @@ header {
     margin: auto;
 
     p {
-      color: $lightGrey;
+      color: $mainOrange;
       padding-bottom: 3%;
       font-size: 1.25em;
     }
 
     h3 {
-      font-size: 1.75em;
+      font-size: 1.5em;
       color: $lightGrey;
       line-height: 1.25em;
       font-weight: normal;

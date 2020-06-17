@@ -21,6 +21,11 @@ function Homepage() {
         <h2>We make a living by what we get, but we make a life by what we give.</h2>
         <h3>Winston Churchill</h3>
       </div>
+      <div className="mission">
+        <h3>Our Mission</h3>
+        <h2>Giving Back Through Mentorship</h2>
+        <p>We strive to create a network of aspiring mentors from around the world and to prepare participants to find mentorship opportunities that best fit their strengths, philosophies, and areas they want to develop. We will advise them on how to be a better mentor and how to lead their own mentorship group in the future. Our ultimate goal is to nurture leaders and encourage members to set up their own networks and practice their leadership.</p>
+      </div>
       <div className="pillars">
         <h2>Our Five Pillars</h2>
         <ul className="rows">
@@ -28,7 +33,7 @@ function Homepage() {
             <div className="image-holder">
               <img src="https://us.123rf.com/450wm/decorwithme/decorwithme1803/decorwithme180300117/97686595-stock-vector-team-flat-design-style-colorful-illustration.jpg?ver=6z" />
             </div>
-            <p>Community of like-minded individuals</p>
+            <p>Fostering a community of like-minded individuals</p>
           </li>
           <li  className="column">
             <div className="image-holder">
@@ -62,7 +67,7 @@ function Homepage() {
           <div className="paragraph">
             <h2>Get Involved</h2>
             <p>Mentorship for Growth is establishing our very own mentor network! We are seeking members interested in mentorship and wanting to gain skills and opportunities to help them get started on their mentorship journey. If you can commit 90 minutes a week to join a virtual mentoring session that includes talks given by esteemed professionals who are seasoned mentors, please apply through the form below.</p>
-            <a href="https://google.com">Join today >></a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxQkCmahZxCN0CaHj_nEHVIniJKiY6KhKoJ58pqtsaH9OrJg/viewform">Join today >></a>
           </div>
         </div>
       </div>
