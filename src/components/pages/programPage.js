@@ -1,11 +1,9 @@
 import React from 'react';
-import Tri from '../../Assets/img/tri.jpg';
-import Chi from '../../Assets/img/chi.jpg';
 
 function Program() {
   return (
     <div className="container-fluid">
-      <div className="heading">
+      <div className="heading program">
         <h1>Program</h1>
       </div>
       <div className="description">

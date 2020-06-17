@@ -1,10 +1,8 @@
 @import "_config.scss";
 
-.empty {
-  padding: 0;
-  margin: 0;
-}
-
+// ******** HEADER **********
+// CONTAINS NAVIGATION LINKS
+// AT THE TOP OF EVERY PAGE
 header {
   position: fixed;
   top: 0;
@@ -14,12 +12,13 @@ header {
   color: $black;
   height: 70px;
   background-color: transparent;
+  font-family: 'Alegreya Sans';
   -webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
   transition: background-color 1s;
 
   .logo {
     position: absolute;
-    top: 50%; left: 15px;
+    top: 50%; left: 2%;
     @include translateY(-50%);
     color: $white;
   }
@@ -33,7 +32,8 @@ header {
 
   nav {
     position: absolute;
-    top: 50%; right: 15px;
+    top: 50%;
+    right: 2%;
     @include translateY(-50%);
 
     ul li {
@@ -62,32 +62,37 @@ header {
   }
 }
 
+
+// ********* HEADING DIV *********
+// CONTAINS TITLE OF PAGE
+// STYLED FOR EACH PAGE
 .heading {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
   padding: 5% 0;
-  height: 600px;
+  height: 550px;
+  font-family: 'Alegreya Sans';
+  text-align: center;
 
 
   h1 {
-    text-align: center;
-    font-size: 4em;
-    padding-top: 10%;
+    font-size: 5em;
+    padding-top: 8%;
     padding-bottom: 1%;
     color: $white;
   }
 
   p {
     color: $lightGrey;
-    font-weight: bold;
+    //font-weight: bold;
   }
 }
 
 .main {
-  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(#9f6316, 0.73)), url(https://cdn.getyourguide.com/img/tour_img-1739965-148.jpg);
-
-
+  // background-image: linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(#9f6316, 1)), url(https://cdn.getyourguide.com/img/tour_img-1739965-148.jpg);
+  background-image: linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(#9f6316, 1)), url(https://arbordayblog.org/wp-content/uploads/2018/06/oak-tree-sunset-iStock-477164218-1080x608.jpg);
+  background-position: center;
 }
 
 .about {
@@ -98,6 +103,18 @@ header {
   }
 }
 
+.program {
+  background-image: linear-gradient(to right, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url(https://www.singaporeartmuseum.sg/-/media/sam/images/yellow-ribbon-2016/yellow-ribbon-2016-hero-desktop.jpg?w=1920&hash=C45B8EFABB5187E610E487C792EB29B906D22369);
+
+  h1 {
+    padding-top: auto;
+  }
+}
+
+
+// ********* MAIN PAGE CONTAINER *********
+// MAIN PAGE BODY
+// INDIVDUAL SECTIONS STYLED BY CLASS
 .container-fluid {
   padding: 0;
 
@@ -107,19 +124,239 @@ header {
   }
 }
 
+.intro {
+  padding: 7% 5%;
+  margin: 0;
+  text-align: left;
+  background-color: $lightGrey;
+  display: flex;
+  font-family: 'Alegreya Sans';
+
+  .paragraph {
+    width: 50%;
+
+    h2 {
+      text-align: left;
+      font-size: 2.5em;
+      //padding-top: 10%;
+      padding-top: 1%;
+      padding-bottom: 3%;
+      color: $black;
+      font-weight: bold;
+    }
+
+    p {
+      color: $darkGrey;
+      text-align: left;
+      font-size: 1em;
+      padding-bottom: 3%;
+      line-height: 1.5em;
+    }
+  }
+
+  img {
+    //float: right;
+    padding-left: 10%;
+  }
+}
+
+.quote {
+  background-image: url(https://cdn.archpaper.com/wp-content/uploads/2020/06/maarten-van-den-heuvel-gZXx8lKAb7Y-unsplash.jpg), linear-gradient(rgba(85, 85, 85, 0.5),rgba(85, 85, 85, 0.5));
+  background-blend-mode: overlay;;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 5% 0;
+  height: 500px;
+  font-family: 'Alegreya Sans';
+
+  h2 {
+    color: $white;
+    text-align: center;
+    padding: 5% 5% 2%;
+    font-size: 4em;
+
+  }
+
+  h3 {
+    text-align: right;
+    padding-right: 10%;
+    color: $lightGrey;
+    font-style: italic;
+    font-size: 1.5em;
+  }
+}
+
+.pillars {
+  padding: 8% 5%;
+  background-color: $white;
+  align-items: center;
+  text-align: center;
+  font-family: 'Alegreya Sans';
+
+  h2 {
+    padding-bottom: 3%;
+    font-size: 2.5em;
+  }
+
+  .rows {
+    display: flex;
+    padding: 0;
+    overflow: hidden;
+
+    .column {
+      flex: 30%;
+      padding: 15px;
+      list-style-type: none;
+
+      .image-holder {
+        height: 200px;
+        position: relative;
+        //padding-bottom: 300px;
+
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          position: absolute;
+          margin: auto;
+          left: 0;
+          right: 0;
+          //top: 0;
+          bottom: 0;
+        }
+      }
+
+      p {
+        padding-top: 50px;
+        color: $darkGrey;
+        font-size: 1em;
+        line-height: 1.5em;
+      }
+    }
+  }
+}
+
+.join {
+  padding: 10% 5%;
+  margin: 0;
+  text-align: left;
+  font-family: 'Alegreya Sans';
+
+  .content {
+    display: flex;
+    padding: 0 10%;
+
+    .paragraph {
+      width: 40%;
+      margin: auto;
+      padding: auto;
+      margin-right: 0;
+
+      h2 {
+        text-align: left;
+        font-size: 2.5em;
+        //padding-top: 10%;
+        padding-bottom: 3%;
+        color: $black;
+        font-weight: bold;
+      }
+
+      p {
+        color: $darkGrey;
+        text-align: left;
+        font-size: 1em;
+        padding-bottom: 4%;
+        line-height: 1.5em;
+      }
+
+      a {
+        font-size: 1.5em;
+        color: $mainOrange;
+
+        &:hover {
+          text-decoration: none;
+          color: $orangeRed;
+        }
+      }
+    }
+
+    img {
+      //float: right;
+      //padding-right: 10%;
+      width: 50%;
+    }
+  }
+}
+
+
+// ********* DONATION *********
+// LINKS TO PAYPAL
+// INCLUDED ON EVERY
+.donate {
+  height: 600px;
+  padding: 12% 0;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-family: 'Alegreya Sans';
+
+
+  background-image: url(https://i.redd.it/yx2xr73lx7i21.jpg);
+  background-blend-mode: overlay;;
+  background-repeat: no-repeat;
+  background-position: 20% 55%;
+
+  .donateInfo {
+    width: 50%;
+    margin: auto;
+
+    p {
+      color: $lightGrey;
+      padding-bottom: 3%;
+      font-size: 1.25em;
+    }
+
+    h3 {
+      font-size: 1.75em;
+      color: $lightGrey;
+      line-height: 1.25em;
+      font-weight: normal;
+    }
+
+    .btn-primary {
+      width: 150px;
+      margin: 5%;
+      font-size: 1.1em;
+      border-radius: 10px;
+      border-color: transparent;
+      background-color: $orangeRed;
+      opacity: 1;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+
+// ********* FOOTER *********
+// CONTAINS COPYRIGHT AND SOCIAL media
+// INCLUDED ON EVERY PAGE
 footer {
   position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: $lightGrey;
+  background-color: $darkGrey;
 
   .copyright {
     text-align: center;
     padding-bottom: 10px;
     margin: 0;
     font-size: 0.75em;
-    color: $darkGrey;
+    color: $lightGrey;
   }
 
   .social-footer {
@@ -140,21 +377,26 @@ footer {
           transform: translateY(-2px);
         }
 
-        &.linkedin {
-          color: #0e76a8;
-        }
-
-        &.facebook {
-          color: #4968ad;
-        }
-
-        &.instagram {
-          color: black;
-        }
-
-        &.email {
+        &.social {
           color: #a6a6a6;
+          font-size: 0.75em;
         }
+
+        // &.linkedin {
+        //   color: #0e76a8;
+        // }
+        //
+        // &.facebook {
+        //   color: #4968ad;
+        // }
+        //
+        // &.instagram {
+        //   color: black;
+        // }
+        //
+        // &.email {
+        //   color: #a6a6a6;
+        // }
       }
     }
   }
