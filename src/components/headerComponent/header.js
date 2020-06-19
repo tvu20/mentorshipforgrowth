@@ -1,4 +1,5 @@
 import React, { Component }  from 'react';
+import Logo from '../../Assets/img/logo.png';
 import {
   Link
 } from 'react-router-dom';
@@ -29,7 +30,7 @@ class Header extends Component {
     return (
       <header className="navbar navbar-fixed-top" data-spy="affix" data-offset-top="30" style={{backgroundColor: `${this.state.color}`}}>
         <div className="logo">
-          LOGO
+          <img src={Logo} alt='m4g' />
         </div>
         <nav>
           <ul>

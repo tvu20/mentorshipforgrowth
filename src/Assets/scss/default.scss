@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Alegreya Sans';
+  box-sizing: border-box;
 }
 
 // ******** HEADER **********
@@ -14,7 +15,7 @@ header {
   display: block;
   width: 100%;
   color: $black;
-  height: 70px;
+  height: 80px;
   background-color: transparent;
   -webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
   transition: background-color 1s;
@@ -23,7 +24,12 @@ header {
     position: absolute;
     top: 50%; left: 2%;
     @include translateY(-50%);
-    color: $white;
+    width: 200px;
+    //background-color: $white;
+
+    img {
+      max-width: 100%;
+    }
   }
 
   nav,
@@ -92,7 +98,6 @@ header {
 }
 
 .main {
-  // background-image: linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(#9f6316, 1)), url(https://cdn.getyourguide.com/img/tour_img-1739965-148.jpg);
   background-image: linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(#a6551a, 1)), url(https://arbordayblog.org/wp-content/uploads/2018/06/oak-tree-sunset-iStock-477164218-1080x608.jpg);
   background-position: center;
 }
@@ -101,7 +106,7 @@ header {
   background-image: linear-gradient(to right, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url(https://s.wsj.net/public/resources/images/MW-GW736_506d44_ZG_20181030180200.jpg);
 
   h1 {
-    padding-top: auto;
+    padding-top: 15%;
   }
 }
 
@@ -109,7 +114,30 @@ header {
   background-image: linear-gradient(to right, rgba(245, 246, 252, 0.52), rgba(117, 19, 63, 0.73)), url(https://www.singaporeartmuseum.sg/-/media/sam/images/yellow-ribbon-2016/yellow-ribbon-2016-hero-desktop.jpg?w=1920&hash=C45B8EFABB5187E610E487C792EB29B906D22369);
 
   h1 {
-    padding-top: auto;
+    padding-top: 15%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heading {
+    padding: 50px;
+    height: 400px;
+    background-size: auto;
+
+    h1 {
+      font-size: 3.25em;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: $white;
+    }
+  }
+
+  .about, .program {
+    h1 {
+      padding-top: 100px;
+    }
   }
 }
 
@@ -130,49 +158,142 @@ header {
 // TOP SECTIONS OF HOME AND PROGRAM PAGES
 // STYLED WITH SIMILAR CSS
 // INDIVIDUAL CHANGES BELOW
-.intro, .offer {
-  padding: 7% 5%;
+// .intro, .offer {
+//   padding: 7% 5%;
+//   margin: 0;
+//   text-align: left;
+//   background-color: $white;
+//   display: flex;
+//
+//   .paragraph {
+//     width: 50%;
+//
+//     h2 {
+//       text-align: left;
+//       font-size: 2.5em;
+//       //padding-top: 10%;
+//       padding-top: 1%;
+//       padding-bottom: 3%;
+//       color: $black;
+//       font-weight: bold;
+//     }
+//
+//     p {
+//       color: $darkGrey;
+//       text-align: left;
+//       font-size: 1em;
+//       padding-bottom: 3%;
+//       line-height: 1.5em;
+//     }
+//   }
+//
+//   img {
+//     width: 50%;
+//     padding-left: 10%;
+//   }
+// }
+//
+// .offer {
+//   padding: 6% 5% 8%;
+//   background-color: $white;
+// }
+
+.intro {
+  background-color: $white;
+  padding: 7% 5% 10%;
   margin: 0;
   text-align: left;
-  background-color: $lightGrey;
-  display: flex;
 
-  .paragraph {
-    width: 50%;
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 
-    h2 {
-      text-align: left;
-      font-size: 2.5em;
-      //padding-top: 10%;
-      padding-top: 1%;
-      padding-bottom: 3%;
-      color: $black;
-      font-weight: bold;
+    .column {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+      position: relative;
+
+      h2 {
+        text-align: left;
+        font-size: 2.5em;
+        //padding-top: 10%;
+        padding-top: 1%;
+        padding-bottom: 3%;
+        color: $black;
+        font-weight: bold;
+      }
+
+      p {
+        color: $darkGrey;
+        text-align: left;
+        font-size: 1em;
+        padding-bottom: 3%;
+        line-height: 1.5em;
+      }
+
+      img {
+        max-width: 90%;
+        max-height: auto;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
     }
 
-    p {
-      color: $darkGrey;
-      text-align: left;
-      font-size: 1em;
-      padding-bottom: 3%;
-      line-height: 1.5em;
+    .paragraph {
+      padding-left: 5%;
+      padding-right: 2%;
     }
-  }
-
-  img {
-    width: 50%;
-    padding-left: 10%;
   }
 }
 
-.offer {
-  padding: 12% 5%;
-  background-color: $white;
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .intro {
+    padding: 12% 6%;
+
+    .row {
+      flex-direction: column;
+      height: 900px;
+      justify-content: center;
+      margin-left: 0;
+
+      .image {
+        height: 200px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .paragraph {
+        padding: 2% 0;
+      }
+
+      .column {
+        position: relative;
+
+        h2 {
+          font-size: 2em;
+          padding-bottom: 25px;
+        }
+      }
+    }
+  }
 }
+
+
 
 // ******** QUOTE AND DESCRIPTION **********
 // FOUND ON MAIN AND PROGRAM PAGES RESPECTIVELY
-.quote, .description {
+.quote, .description, .harvard {
   background-image: url(https://cdn.archpaper.com/wp-content/uploads/2020/06/maarten-van-den-heuvel-gZXx8lKAb7Y-unsplash.jpg), linear-gradient(rgba(85, 85, 85, 0.5),rgba(85, 85, 85, 0.5));
   background-blend-mode: overlay;;
   background-repeat: no-repeat;
@@ -199,6 +320,24 @@ header {
   }
 }
 
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .quote {
+    padding: 10% 5%;
+    height: 400px;
+
+    h2 {
+      padding-top: 10%;
+      font-size: 2.5em;
+    }
+
+    h3 {
+      font-size: 1.25em;
+    }
+  }
+}
+
 .description {
   height: auto;
   padding: 12% 5%;
@@ -211,11 +350,34 @@ header {
   }
 }
 
+.harvard {
+  height: auto;
+  padding: 12% 5%;
+  background-image: url(https://media4.manhattan-institute.org/sites/cj/files/harvard-conference-homeschooling-ban.jpg), linear-gradient(to top, rgba(149, 73, 33, 0.73), rgba(204, 40, 0, 0.76));
+
+  p {
+    text-align: center;
+    color: $white;
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .harvard {
+    padding: 10% 6%;
+    height: 400px;
+
+    p {
+      font-size: 1.25em;
+    }
+  }
+}
+
 .pillars {
   padding: 9% 5%;
   background-color: $white;
   align-items: center;
-  text-align: center;rgba(42, 102, 199, 0.53)
+  text-align: center;
 
   h2 {
     padding-bottom: 3%;
@@ -260,6 +422,15 @@ header {
   }
 }
 
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .pillars {
+    .rows {
+      flex-direction: column;
+    }
+  }
+}
+
 // ******** MISSION **********
 // FOUND ON MAIN PAGE
 .mission {
@@ -284,23 +455,131 @@ header {
   }
 }
 
-// ******** JOIN **********
-// IDENTICAL SECTION
-// FOUND ON HOME AND ABOUT PAGES
-.join {
-  padding: 12% 5%;
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .mission {
+    padding: 100px 10%;
+    h2 {
+      font-size: 2.5em;
+      padding-bottom: 20px;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+}
+
+
+// ******** FOUNDERS **********
+// FOUND ON ABOUT PAGE
+.founders {
+  padding: 6% 3% 5%;
   margin: 0;
   text-align: left;
   background-color: $white;
 
-  .content {
+  .image-holder {
+    position: relative;
+    width: 400px;
+    //background-color: $lightGrey;
+    //padding-bottom: 300px;
+
+    img {
+      max-width: 100%;
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-radius: 50%;
+    }
+  }
+
+  .founder {
     display: flex;
-    padding: 0 10%;
+    padding: 0 10% 15%;
 
     .paragraph {
-      width: 40%;
+      width: 50%;
       margin: auto;
       padding: auto;
+      //background-color: $lightGrey;
+
+      h2 {
+        text-align: left;
+        font-size: 2em;
+        //padding-top: 10%;
+        //padding-bottom: 3%;
+        color: $black;
+        font-weight: bold;
+      }
+
+      h3 {
+        padding-bottom: 3%;
+        color: $mainOrange;
+        font-size: 1.5em;
+      }
+
+      p {
+        color: $darkGrey;
+        text-align: left;
+        font-size: 1em;
+        padding-bottom: 4%;
+        line-height: 1.5em;
+      }
+    }
+  }
+
+  .tri {
+    .paragraph {
+      padding-right: 10%;
+      width: 100%;
+
+    }
+  }
+
+  .chi {
+
+    padding-bottom: 6%;
+    .paragraph {
+      padding-left: 10%;
+      width: 100%;
+
+    }
+  }
+}
+
+
+
+
+
+// ******** JOIN **********
+// IDENTICAL SECTION
+// FOUND ON HOME AND ABOUT PAGES
+.join {
+  padding: 12% 8%;
+  margin: 0;
+  text-align: left;
+  background-color: $white;
+
+  .rows {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+      position: relative;
+      padding: 5% 4%;
+    }
+
+    .paragraph {
+      margin: auto;
       margin-right: 0;
 
       h2 {
@@ -332,7 +611,47 @@ header {
     }
 
     img {
-      width: 50%;
+      max-width: 90%;
+      max-height: auto;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .join {
+    //padding: 12% 6%;
+
+    .rows {
+      flex-direction: column;
+      height: 900px;
+      justify-content: center;
+      margin-left: 0;
+
+      .column {
+        height: auto;
+        margin: 0;
+        padding: 20% 4%;
+      }
+
+      .paragraph {
+        padding-top: 3%;
+      }
+
+      .image {
+        //background-color: $lightGrey;
+        margin: 0;
+        padding: 0;
+
+        img {
+          max-width: 100%;
+        }
+      }
     }
   }
 }
@@ -430,6 +749,21 @@ header {
 
       &:hover {
         opacity: 0.7;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .donate {
+    padding: 12% 5%;
+    height: 500px;
+    .donateInfo {
+      padding: 10% 0;
+      width: 90%;
+
+      h3 {
+        font-size: 1.25em;
       }
     }
   }

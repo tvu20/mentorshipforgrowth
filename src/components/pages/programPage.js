@@ -16,11 +16,11 @@ function Program() {
             We invite guest speakers who share their mentoring journey, how it enriches their professional careers, and give examples on the lessons they’ve learned on how to be a better mentor. We give participants opportunities to showcase their mentorship skills to others. Through our program, participants can build their credentials and gain valuable experience, which they can demonstrate in front of invited guests and corporate sponsors.
           </p>
         </div>
-        <img src="https://media.npr.org/assets/img/2019/10/25/mentorship-ask1_web-site-copy-1-_wide-ef7b4604d31a1ac0a5aa483ecef2b6fbf9ba0781.png"/>
+        <img src="https://media.npr.org/assets/img/2019/10/25/mentorship-ask1_web-site-copy-1-_wide-ef7b4604d31a1ac0a5aa483ecef2b6fbf9ba0781.png" alt="mentoring"/>
       </div>
       <div className="audience">
         <div className="img-container">
-          <img src="https://clipartart.com/images/comminsnitst-clipart-7.jpg"></img>
+          <img src="https://clipartart.com/images/comminsnitst-clipart-7.jpg"  alt="mentoring"></img>
         </div>
         <div className="paragraph">
           <h2>Our Target Audience</h2>
@@ -41,9 +41,11 @@ function Program() {
         </p>
       </div>
       <div className="join">
-        <div className="content">
-          <img src="https://m.economictimes.com/thumb/msid-69418061,width-1200,height-900,resizemode-4,imgsize-505144/mentorship-thnkstock.jpg" alt="person"/>
-          <div className="paragraph">
+        <div className="rows">
+          <div className="column image">
+            <img src="https://m.economictimes.com/thumb/msid-69418061,width-1200,height-900,resizemode-4,imgsize-505144/mentorship-thnkstock.jpg" alt="person"/>
+          </div>
+          <div className="column paragraph">
             <h2>Get Involved</h2>
             <p>Mentorship for Growth is establishing our very own mentor network! We are seeking members interested in mentorship and wanting to gain skills and opportunities to help them get started on their mentorship journey. If you can commit 90 minutes a week to join a virtual mentoring session that includes talks given by esteemed professionals who are seasoned mentors, please apply through the form below.</p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxQkCmahZxCN0CaHj_nEHVIniJKiY6KhKoJ58pqtsaH9OrJg/viewform">Join today >></a>
