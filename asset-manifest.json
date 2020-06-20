@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/mentorshipforgrowth/static/css/main.0b73aa9e.chunk.css",
+    "main.js": "/mentorshipforgrowth/static/js/main.75430cc7.chunk.js",
+    "main.js.map": "/mentorshipforgrowth/static/js/main.75430cc7.chunk.js.map",
+    "runtime-main.js": "/mentorshipforgrowth/static/js/runtime-main.cc07b210.js",
+    "runtime-main.js.map": "/mentorshipforgrowth/static/js/runtime-main.cc07b210.js.map",
+    "static/js/2.f39ff3de.chunk.js": "/mentorshipforgrowth/static/js/2.f39ff3de.chunk.js",
+    "static/js/2.f39ff3de.chunk.js.map": "/mentorshipforgrowth/static/js/2.f39ff3de.chunk.js.map",
+    "index.html": "/mentorshipforgrowth/index.html",
+    "precache-manifest.7a22cfc72697e2ed920082fb43f77f3c.js": "/mentorshipforgrowth/precache-manifest.7a22cfc72697e2ed920082fb43f77f3c.js",
+    "service-worker.js": "/mentorshipforgrowth/service-worker.js",
+    "static/css/main.0b73aa9e.chunk.css.map": "/mentorshipforgrowth/static/css/main.0b73aa9e.chunk.css.map",
+    "static/js/2.f39ff3de.chunk.js.LICENSE.txt": "/mentorshipforgrowth/static/js/2.f39ff3de.chunk.js.LICENSE.txt",
+    "static/media/audience.jpg": "/mentorshipforgrowth/static/media/audience.0f8bab98.jpg",
+    "static/media/default.min.css": "/mentorshipforgrowth/static/media/tree.87f1d55e.jpg",
+    "static/media/career.jpg": "/mentorshipforgrowth/static/media/career.a1bb01ec.jpg",
+    "static/media/chi.jpg": "/mentorshipforgrowth/static/media/chi.0e828bfb.jpg",
+    "static/media/community.jpg": "/mentorshipforgrowth/static/media/community.d56a1326.jpg",
+    "static/media/join.jpg": "/mentorshipforgrowth/static/media/join.9c3a3e70.jpg",
+    "static/media/leader.jpg": "/mentorshipforgrowth/static/media/leader.7bdada0c.jpg",
+    "static/media/logo.png": "/mentorshipforgrowth/static/media/logo.a6c7421d.png",
+    "static/media/mentor.jpg": "/mentorshipforgrowth/static/media/mentor.1d9ed22e.jpg",
+    "static/media/network.jpg": "/mentorshipforgrowth/static/media/network.cd2babe8.jpg",
+    "static/media/offer.jpg": "/mentorshipforgrowth/static/media/offer.50ae6f14.jpg",
+    "static/media/skill.jpg": "/mentorshipforgrowth/static/media/skill.2b502475.jpg",
+    "static/media/tri.jpg": "/mentorshipforgrowth/static/media/tri.d0a3b306.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cc07b210.js",
+    "static/js/2.f39ff3de.chunk.js",
+    "static/css/main.0b73aa9e.chunk.css",
+    "static/js/main.75430cc7.chunk.js"
+  ]
+}
