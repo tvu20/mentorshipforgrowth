@@ -24,7 +24,7 @@ class App extends Component {
         <div className="App" style={{height: '100%'}}>
           <Navbar />
           <main>
-            <Route exact path='/mentorshipforgrowth' component={Homepage} />
+            <Route exact path='/' component={Homepage} />
             <Route exact path='/About' component={About} />
             <Route exact path='/Program' component={Program} />
             <Donate />
