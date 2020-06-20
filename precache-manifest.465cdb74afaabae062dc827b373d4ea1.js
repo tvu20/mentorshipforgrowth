@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bb0b5adf66bb6cbcb17e098540ffa8ba",
+    "revision": "027ec44c01d123d20311f7c33763a2dc",
     "url": "/mentorshipforgrowth/index.html"
   },
   {
-    "revision": "cf01555a922217f4641c",
+    "revision": "749c492a5dcac43d628e",
     "url": "/mentorshipforgrowth/static/css/main.0b73aa9e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mentorshipforgrowth/static/js/2.f39ff3de.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cf01555a922217f4641c",
-    "url": "/mentorshipforgrowth/static/js/main.75430cc7.chunk.js"
+    "revision": "749c492a5dcac43d628e",
+    "url": "/mentorshipforgrowth/static/js/main.64b8b6ab.chunk.js"
   },
   {
     "revision": "669d67045633e28b20d8",
