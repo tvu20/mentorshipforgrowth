@@ -1,4 +1,11 @@
 import React from 'react';
+import Mentor from '../../Assets/img/mentor.jpg';
+import Join from '../../Assets/img/join.jpg';
+import Career from '../../Assets/img/career.jpg';
+import Community from '../../Assets/img/community.jpg';
+import Leader from '../../Assets/img/leader.jpg';
+import Network from '../../Assets/img/network.jpg';
+import Skill from '../../Assets/img/skill.jpg';
 
 function Homepage() {
   return (
@@ -17,7 +24,7 @@ function Homepage() {
             <p>We encourage and equip people who are interested in giving back to their community to learn the skills needed to effectively mentor others in their academic journey, career, and life. We help people find new ways to contribute to their community, improve their soft skills, connect with like-minded people, and gain experience for their own career development.</p>
           </div>
           <div className="column image">
-            <img src="https://s.ftcdn.net/v2013/pics/all/curated/eF5wSqeQWhBTGEt83MuqEvpvYOTWaxC5_cover_580.jpg?r=cbcdc1f602e63cf939d30a9c49e2c861f5dd51c5" alt="person"/>
+            <img src={Mentor} alt="person"/>
           </div>
         </div>
       </div>
@@ -35,31 +42,31 @@ function Homepage() {
         <ul className="rows">
           <li className="column">
             <div className="image-holder">
-              <img src="https://us.123rf.com/450wm/decorwithme/decorwithme1803/decorwithme180300117/97686595-stock-vector-team-flat-design-style-colorful-illustration.jpg?ver=6z"  alt="community"/>
+              <img src={Community}  alt="community"/>
             </div>
             <p>Fostering a community of like-minded individuals</p>
           </li>
           <li  className="column">
             <div className="image-holder">
-              <img src="https://img.freepik.com/free-vector/person-people-man-woman-connect-jigsaw-business-puzzle-flat-background-concept_159757-62.jpg?size=626&ext=jpg" alt="skills" />
+              <img src={Skill} alt="skills" />
             </div>
             <p>Skill-building sessions</p>
           </li>
           <li  className="column">
             <div className="image-holder">
-              <img src="https://cdn.dribbble.com/users/310943/screenshots/4202081/zremote-team-collaboration-illustration.png"  alt="leaders"/>
+              <img src={Leader}  alt="leaders"/>
             </div>
             <p>Opportunities to meet, interact, and network with other passionate leaders, especially guest speakers</p>
           </li>
           <li  className="column">
             <div className="image-holder">
-              <img src="https://img.freepik.com/free-vector/characters-people-their-social-network-illustration_53876-32594.jpg?size=626&ext=jpg"  alt="network"/>
+              <img src={Network}  alt="network"/>
             </div>
             <p>Opportunities to build their own network under with our guidance and support</p>
           </li>
           <li  className="column">
             <div className="image-holder">
-              <img src="https://blogsimages.adobe.com/creative/files/2019/06/Fotolia_224946995_M-1.jpg" alt="career" />
+              <img src={Career} alt="career" />
             </div>
             <p>Exposure to potential organizations for future mentorship and career opportunities</p>
           </li>
@@ -67,13 +74,13 @@ function Homepage() {
       </div>
       <div className="harvard">
         <p>
-          Inspired by Benjamin Franklin's similar group in colonial Philadelphia, the Franklin Fellowship creates communities dedicated to mutual improvement. The Franklin Fellowship hosts multiple conversations and events each week, usually including guest speakers, with a community of sixty Harvard undergraduates.
+          Mentorship for Growth, part of Harvard University's Franklin Fellowship program, is a networking organization for professionals interested in becoming more involved in their community. M4G will help you get started on your mentorship journey and build connections with organizations looking for people just like you.
         </p>
       </div>
       <div className="join">
         <div className="rows">
           <div className="column image">
-            <img src="https://m.economictimes.com/thumb/msid-69418061,width-1200,height-900,resizemode-4,imgsize-505144/mentorship-thnkstock.jpg" alt="person"/>
+            <img src={Join} alt="person"/>
           </div>
           <div className="column paragraph">
             <h2>Get Involved</h2>

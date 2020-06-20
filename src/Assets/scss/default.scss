@@ -154,14 +154,15 @@ body {
   }
 
   p {
-    color: $lightGrey;
+    color: $white;
+    font-size: 2em;
     //font-weight: bold;
   }
 }
 
 .main {
-  background-image: linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(#a6551a, 1)), url(https://arbordayblog.org/wp-content/uploads/2018/06/oak-tree-sunset-iStock-477164218-1080x608.jpg);
-  background-position: center;
+  background-image: linear-gradient(to top, rgba(245, 246, 252, 0.3), rgba(#a6551a, 1)), url('../img/tree.jpg');
+  background-position: 50% 40%;
 }
 
 .about {
@@ -173,7 +174,7 @@ body {
 }
 
 .program {
-  background-image: linear-gradient(to top, rgba(245, 246, 252, 0.3), rgba(117, 19, 63, 0.73)), url(https://www.singaporeartmuseum.sg/-/media/sam/images/yellow-ribbon-2016/yellow-ribbon-2016-hero-desktop.jpg?w=1920&hash=C45B8EFABB5187E610E487C792EB29B906D22369);
+  background-image: linear-gradient(to top, rgba(245, 246, 252, 0.3), rgba(117, 19, 63, 0.73)), url('../img/program.jpg');
 
   h1 {
     //padding-top: 15%;
@@ -387,7 +388,7 @@ body {
 // ******** QUOTE AND DESCRIPTION **********
 // FOUND ON MAIN AND PROGRAM PAGES RESPECTIVELY
 .quote, .description, .harvard {
-  background-image: url(https://cdn.archpaper.com/wp-content/uploads/2020/06/maarten-van-den-heuvel-gZXx8lKAb7Y-unsplash.jpg), linear-gradient(rgba(85, 85, 85, 0.5),rgba(85, 85, 85, 0.5));
+  background-image: url('../img/bridge.jpg'), linear-gradient(rgba(85, 85, 85, 0.5),rgba(85, 85, 85, 0.5));
   background-blend-mode: overlay;;
   background-repeat: no-repeat;
   background-size: cover;
@@ -434,7 +435,7 @@ body {
 .description {
   height: auto;
   padding: 12% 5%;
-  background-image: url(https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20190410173608/Mountains.jpg), linear-gradient(rgba(161, 70, 21, 0.74), rgba(42, 102, 199, 0.6));
+  background-image: url('../img/mountains.jpg'), linear-gradient(rgba(161, 70, 21, 0.74), rgba(42, 102, 199, 0.49));
 
   p {
     text-align: center;
@@ -446,7 +447,7 @@ body {
 .harvard {
   height: auto;
   padding: 12% 5%;
-  background-image: url(https://media4.manhattan-institute.org/sites/cj/files/harvard-conference-homeschooling-ban.jpg), linear-gradient(to top, rgba(149, 73, 33, 0.73), rgba(204, 40, 0, 0.76));
+  background-image: url('../img/harvard.jpg'), linear-gradient(to top, rgba(149, 73, 33, 0.73), rgba(204, 40, 0, 0.76));
 
   p {
     text-align: center;

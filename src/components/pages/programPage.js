@@ -1,4 +1,7 @@
 import React from 'react';
+import Join from '../../Assets/img/join.jpg';
+import Audience from '../../Assets/img/audience.jpg';
+import Offer from '../../Assets/img/offer.jpg';
 
 function Program() {
   return (
@@ -18,14 +21,14 @@ function Program() {
             </p>
           </div>
           <div className="column image">
-            <img src="https://media.npr.org/assets/img/2019/10/25/mentorship-ask1_web-site-copy-1-_wide-ef7b4604d31a1ac0a5aa483ecef2b6fbf9ba0781.png" alt="mentoring"/>
+            <img src={Offer} alt="mentoring"/>
           </div>
         </div>
       </div>
       <div className="audience">
         <div className="row">
           <div className="image column">
-            <img src="https://i.ya-webdesign.com/images/organization-clipart-business-organization-11.png"  alt="mentoring"></img>
+            <img src={Audience}  alt="mentoring"></img>
           </div>
           <div className="paragraph column">
             <h2>Our Target Audience</h2>
@@ -49,7 +52,7 @@ function Program() {
       <div className="join">
         <div className="rows">
           <div className="column image">
-            <img src="https://m.economictimes.com/thumb/msid-69418061,width-1200,height-900,resizemode-4,imgsize-505144/mentorship-thnkstock.jpg" alt="person"/>
+            <img src={Join} alt="person"/>
           </div>
           <div className="column paragraph">
             <h2>Get Involved</h2>
